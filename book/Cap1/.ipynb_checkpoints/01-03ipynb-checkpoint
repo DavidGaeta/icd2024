@@ -1,0 +1,226 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "128e14f8-8440-4122-ae43-5e866d11ea41",
+   "metadata": {},
+   "source": [
+    "## IPython Magic Commands\n",
+    "Eber David Gaytán Medina"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5cd6e14f-35ab-4406-b813-b1dcdc51db69",
+   "metadata": {},
+   "source": [
+    "Pasting Code Blocks: `%paste` and `%cpaste`"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "13c94a9a-deb6-4f38-8ff9-cb4833f8fc87",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def donothing(x):\n",
+    "...     return x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9fc40aef-d85a-49bc-9407-654627d676f7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "In [2]: >>> def donothing(x):\n",
+    "   ...:     ...     return x\n",
+    "   ...:     \n",
+    "  File \"<ipython-input-20-5a66c8964687>\", line 2\n",
+    "    ...     return x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ffaf3022-3972-476e-a62d-6002273be9c4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "%paste\n",
+    ">>> def donothing(x):\n",
+    "...     return x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2e8badb1-0494-4f2e-8d82-ac676ab58869",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "In [4]: donothing(10)\n",
+    "Out[4]: 10"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e48dc4f8-86d5-4c81-bfdd-a4ff1732b101",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "In [5]: %cpaste\n",
+    "Pasting code; enter '--' alone on the line to stop or use Ctrl-D.\n",
+    ":>>> def donothing(x):\n",
+    ":...     return x\n",
+    ":--"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b0c2f030-54f0-452d-9dfb-cc192db17a62",
+   "metadata": {},
+   "source": [
+    "#### Running External Code:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "537f09cd-7bb8-40be-9624-68a038a49797",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#-------------------------------------\n",
+    "# file: myscript.py\n",
+    "\n",
+    "def square(x):\n",
+    "    \"\"\"square a number\"\"\"\n",
+    "    return x ** 2\n",
+    "\n",
+    "for N in range(1, 4):\n",
+    "    print(N, \"squared is\", square(N))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9324c0e9-ed61-476e-98f1-cfba8cd9879e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "In [6]: %run myscript.py\n",
+    "1 squared is 1\n",
+    "2 squared is 4\n",
+    "3 squared is 9"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7f21e765-4f41-4865-967e-24c36401daf7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "In [7]: square(5)\n",
+    "Out[7]: 25"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a95c176e-bdac-41de-96e3-24e72d1f1294",
+   "metadata": {},
+   "source": [
+    "#### Timing Code Execution: `%timeit`"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "267457e1-52d0-405c-a092-f1fc4ded6dd2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "In [8]: %timeit L = [n ** 2 for n in range(1000)]\n",
+    "1000 loops, best of 3: 325 µs per loop"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "985773fc-c551-407a-bd7b-094df96cf2b6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "In [9]: %%timeit\n",
+    "   ...: L = []\n",
+    "   ...: for n in range(1000):\n",
+    "   ...:     L.append(n ** 2)\n",
+    "   ...: \n",
+    "1000 loops, best of 3: 373 µs per loop"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1f9d0479-7ea9-4c34-9cf5-f5054d9c32b7",
+   "metadata": {},
+   "source": [
+    "#### Help on Magic Functions: ?, `%magic`, and `%lsmagic`"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "848ad084-506c-4a5f-b1cd-2e6a35c1f609",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "In [10]: %timeit?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8d8eb2c2-87a1-43f5-8a56-90f059c923de",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "In [11]: %magic"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "116ad5cc-ba95-4955-83c7-7775cf242133",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "In [12]: %lsmagic"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
