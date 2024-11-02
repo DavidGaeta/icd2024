@@ -1,0 +1,99 @@
+\documentclass[letterpaper,12pt]{article}
+%\documentclass[conference]{IEEEtran}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{cite}
+\DeclareGraphicsExtensions{.jpg,.pdf,.mps,.png}
+
+% Márgenes
+\usepackage[top=2.0cm, left=2cm, right=2cm, bottom=2cm]{geometry}
+% Interlineado
+%\linespread{1.5}
+\usepackage{hyperref}
+% Times Roman
+\usepackage{mathptmx}
+\usepackage{blindtext}
+\linespread{1.3}\selectfont
+\bibliographystyle{ieeetr}
+
+\title{Reporte: A survey on Text Classification Algorithms: From Text to Predictions (2nd Part)}
+\author{Eber David Gaytán Medina}
+\date{04 Noviembre 2024}
+
+
+\begin{document}
+\maketitle
+%\thispagestyle{empty}
+%\pagestyle{empty}
+
+%Aquí va la el escrito
+Como ya se había mencionado en el primer reporte sobre la clasificaci\'on de 
+texto, existen dos tipos fácilmente separables, los métodos ``shallow learning''
+y los métodos ``deep learning''. En el caso de los métodos de shallow learning como 
+Support Vector Machines (SVM), k-Nearest Neighbors (k-NN) o Logistic Regression (LR), 
+un factor limitante importante es su dependencia en la extracción de características, 
+lo que requiere un conocimiento significativo del dominio. Esto también implica que 
+no se pueden generalizar a otras tareas fácilmente. 
+Por lo tanto, el siguiente paso es el desarrollo del paradigma deep learning
+que tiene la habilidad de capturar informaci\'on significativa sin las desventajas
+de los clasificadores cl\'asicos.
+
+Dentro de la categoría de deep learning se tienen a los: Multilayer Perceptrons (MLPs),
+son los dise\~nos m\'as b\'asicos de las redes neuronales; Recurrent Neural Networks (RNNs)
+que son populares cuando tratas con informaci\'on secuencial; Convolutional Neural Networks
+(CNN), normalmente usados en visi\'on por computadora pero recientemente usadas en forma de
+Temporal Convolutional Networks que tienen la habilidad de capturar información temporal 
+de alto nivel; Modelos basados en aproximación; RNN Encoder-Decoders, capaces de procesar
+secuencias de datos secuenciales y usados en traducci\'on, generaci\'on de voz, etc; 
+Attention Mechanism, es un mecanismo utilizado para que otras arquitecturas se enfoquen en
+las partes m\'as relevantes; La Transformer Architecture, es un nuevo tipo de arquitectura 
+neuronal que codifica los datos de entrada como características poderosas a través 
+del mecanismo de atención~\footnote{Kai Han, An Xiao, Enhua Wu, Jianyuan Guo, Chunjing 
+Xu, y Yunhe Wang. ``Transformer in Transformer.'' En *Advances in Neural Information 
+Processing Systems*, editado por M. Ranzato, A. Beygelzimer, Y. Dauphin, P. S. Liang, 
+y J. Wortman Vaughan, 15908–15919. Vol. 34. Curran Associates, Inc., 2021. Disponible 
+en: \url{https://proceedings.neurips.cc/paper_files/paper/2021/file/854d9fca60b4bd07f9bb215d59ef5561-Paper.pdf}.}
+. A partir de la arquitectura de transformers se han generado avances en la construcci\'on de
+modelos de deep learning, los cuales están utilizando un nuevo estándar para el procesamiento de
+lenguaje natural que consiste en tomar un modelo de lenguaje natural preentrenado y después
+especializarlo en las tareas a través de un ``ajuste fino''. Sin embargo, a pesar de que los 
+transformers son efectivos para modelar el lenguaje suelen aprender información redundante. Por
+esta raz\'on surgen los modelos GPT y BERT, para prevenir las redundancias el GPT solo utiliza 
+decodificadores mientras que el BERT utiliza codificadores haciendo a ambos modelos 
+m\'as ligeros y eficientes. A partir de estos modelos, surgen adecuaciones y 
+mejoras. Algunos son:
+RoBERTa, mejora de BERT que utiliza un enmascaramiento dinámico y elimina la 
+tarea de predicción de la siguiente oración, lo que mejora el rendimiento
+general; XLNet, combina las ventajas de BERT y GPT, utilizando un enfoque 
+autoregresivo y un preentrenamiento que considera todas las permutaciones
+posibles de las palabras en una secuencia;
+DeBERTa, introduce una atención desencadenada y utiliza un preentrenamiento 
+basado en MLM, mejorando la robustez del modelo; ByT5, una variante de T5 
+que trabaja con bytes en lugar de tokens, eliminando la necesidad de 
+tokenización y mejorando la capacidad de manejo de texto; ERNIE 3.0, que integra información de grafos de conocimiento 
+en su fase de preentrenamiento, mejorando así su comprensión de entidades y 
+relaciones; FLAN, se centra en la fine-tuning con instrucciones para mejorar la 
+capacidad de generalización a tareas no vistas. También en este articulo se menciona
+los Graph Neural Networks (GNN) que básicamente son arquitecturas que utilizan grafos 
+para capturar dependencias y relaciones en sus nodos.
+
+Finalmente, como ya había mencionado en el reporte 3, me hubiera gustado que en una recopilación
+tan extensa como \'esta, no solo hubiesen abordado el \'area de clasificadores de texto. Sin embargo,
+por la misma extensi\'on, ahora tambi\'en creo que este art\'iculo podr\'a dividirse 
+en dos, modelos shallow y deep, para profundizar m\'as en cada uno de ellos. Me gustaría
+ver en un solo art\'iculo la informaci\'on condensada, de tal manera que para el momento de evaluar qu\'e modelo utilizar
+en mis proyectos, pudiera tener todas las herramientas para tomar decisiones.
+
+
+
+
+
+ %\begin{thebibliography}{}
+ %   \bibitem{datascience1}
+ %       Najafabadi, M.M., Villanustre, F., Khoshgoftaar, T.M. et al. Deep learning 
+ %applications and challenges in big data analytics. \textit{Journal of Big Data 2}, 1 (2015).https://doi.org/10.1186/s40537-014-0007-7
+%\end{thebibliography}
+
+\end{document}
