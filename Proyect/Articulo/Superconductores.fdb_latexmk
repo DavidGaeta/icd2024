@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex Superconductores"] 1732105689.65946 "Superconductores.aux" "Superconductores.bbl" "Superconductores" 1732105691.06622 0
+["bibtex Superconductores"] 0 "Superconductores.aux" "Superconductores.bbl" "Superconductores" 1732122737.14921 -1
   "./bibliografia.bib" 1732088407.94652 1679 a97970cbe7b5777536202f3527ecb041 ""
   "/usr/share/texmf-dist/bibtex/bst/base/ieeetr.bst" 1727349926 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "Superconductores.aux" 1732105690.76039 4076 3ff22c99dc281732767c7bfc76274e0f "pdflatex"
+  "Superconductores.aux" 1732122736.83267 3963 0705214b605a8b839e66402da1f2be9a "pdflatex"
   (generated)
   "Superconductores.bbl"
   "Superconductores.blg"
   (rewritten before read)
-["pdflatex"] 1732105689.77528 "/home/eber/Documentos/Maestria-en-Ciencias-de-la-Computacion/Ciencia de Datos/icd2024/Proyect/Articulo/Superconductores.tex" "Superconductores.pdf" "Superconductores" 1732105691.06659 0
-  "/home/eber/Documentos/Maestria-en-Ciencias-de-la-Computacion/Ciencia de Datos/icd2024/Proyect/Articulo/Superconductores.tex" 1732105688.07238 12778 5ea864b782ba95084ffd5e7e75ea6155 ""
+["pdflatex"] 1732122735.77108 "/home/eber/Documentos/Maestria-en-Ciencias-de-la-Computacion/Ciencia de Datos/icd2024/Proyect/Articulo/Superconductores.tex" "Superconductores.pdf" "Superconductores" 1732122737.14953 0
+  "/home/eber/Documentos/Maestria-en-Ciencias-de-la-Computacion/Ciencia de Datos/icd2024/Proyect/Articulo/Superconductores.tex" 1732122735.29288 12741 8b4490f1126b09144eba7c3bb3f852b6 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1727349926 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1727349926 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1727349926 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -98,10 +98,10 @@
   "Desvalance.png" 1732086801.51748 33203 036ab70aeb06afc7f6163773e1b0182f ""
   "Entrenamiento.png" 1732082157.61967 120850 83a94d3c3b249bc09c7df919db958f1c ""
   "Loss.png" 1732105370.99517 26906 4e43e47c1135dc44b4dc81d6209a5484 ""
-  "Superconductores.aux" 1732105690.76039 4076 3ff22c99dc281732767c7bfc76274e0f "pdflatex"
-  "Superconductores.bbl" 1732105689.76656 1150 01cbd1f7d51c6fafca79e221f5b02544 "bibtex Superconductores"
-  "Superconductores.out" 1732105690.76372 2295 51f28182e312ea0fc22c007791b10254 "pdflatex"
-  "Superconductores.tex" 1732105688.07238 12778 5ea864b782ba95084ffd5e7e75ea6155 ""
+  "Superconductores.aux" 1732122736.83267 3963 0705214b605a8b839e66402da1f2be9a "pdflatex"
+  "Superconductores.bbl" 1732122086.80484 1150 01cbd1f7d51c6fafca79e221f5b02544 "bibtex Superconductores"
+  "Superconductores.out" 1732122736.83267 2210 8fa87e6e270fe7ff965211333fdf4dc2 "pdflatex"
+  "Superconductores.tex" 1732122735.29288 12741 8b4490f1126b09144eba7c3bb3f852b6 ""
   (generated)
   "Superconductores.aux"
   "Superconductores.log"

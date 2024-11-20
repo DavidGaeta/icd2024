@@ -71,7 +71,7 @@ investigación (equipos de resonancia magnética nuclear, aceleradores, reactore
 procesos industriales (separación magnética), donde la eficiencia y el control de los 
 campos magnéticos son esenciales.
 
-\subsection{Objetivo}
+
 Dada la relevancia de estos avances, las investigaciones sobre nuevos materiales 
 superconductores ya no solo son valiosas, sino necesarias. Para acelerar el 
 descubrimiento de nuevos materiales con estas propiedades, el uso de herramientas 
@@ -83,9 +83,9 @@ Se utilizaron dos~\href{https://www.kaggle.com/datasets/tunguz/superconductivty-
 el primero se hizo a partir un conjunto de datos con descriptores químicos y 
 físicos de materiales, con el objetivo de establecer una relación entre la 
 composición de los elementos y la superconductividad a altas 
-temperaturas~\cite{tunguz_superconductivity_dataset}. El segundo es la base y tiene el formato de material y temperatura critica.
-Para asegurarse de condensar la mayor cantidad de información en un solo data set ase hizo 
-un ``merge'' a partir de la temperatura critica, uniendo 82 columnas
+temperaturas~\cite{tunguz_superconductivity_dataset}. El segundo es la base y tiene el formato de material y temperatura cr\'itica.
+Para asegurarse de condensar la mayor cantidad de información en un solo dataset se hizo 
+un ``merge'' a partir de la temperatura cr\'itica, uniendo 82 columnas
 del primer dataset y 87 del segundo.
  
 \subsection{Conjunto de datos}
@@ -97,15 +97,15 @@ descriptivas de los elementos que componen cada material.
 
 \subsection{Preprocesamiento}
 
-\subsection{Gestión de Datos Desbalanceados} Se exploró la distribución de 
+\subsubsection{Gestión de Datos Desbalanceados} Se exploró la distribución de 
 las temperaturas críticas para identificar posibles desbalances. 
 Se emplearon histogramas y gráficos de densidad para visualizar 
 la distribución.
 
-\subsubsection{Estandarizacion}
-Se obtuvo que los datos se desvalanceaban hacia temperaturas 
-cercanas al 0 absoluto como se puede observar en la fugura~\ref{fig:desvalance}, por lo tanto se hizo una transformación 
-z-score para de modo que todos los atributos contribuyan de manera 
+\subsubsection{Estandarizaci\'on}
+Se obtuvo que los datos se desbalanceaban hacia temperaturas 
+cercanas al 0 absoluto como se puede observar en la figura~\ref{fig:desvalance}, por lo tanto se hizo una transformación 
+z-score para que todos los atributos contribuyan de manera 
 equitativa al entrenamiento del modelo, evitando que los atributos 
 con mayores magnitudes dominen el proceso.
 
@@ -124,10 +124,9 @@ estadísticas de la distribución se mantuvieran.
 
 \subsection{Arquitectura del Modelo}
 
-Se diseñó un modelo de red neuronal profunda utilizando Keras, se usaron 
+Se diseñó un modelo de red neuronal profunda utilizando Keras y se usaron 
 capas densas con la justificación de atacar una problemática con muchos 
-atributos. Al con 
-la siguiente arquitectura:
+atributos. La arquitectura es la siguiente:
 \begin{itemize}
     \item Una capa densa de 256 neuronas con función de activación ReLU, 
     seguida de una capa de Dropout (0.3) para prevenir el sobreajuste.
@@ -149,7 +148,7 @@ métrica de evaluación.
 Se entrenó el modelo durante 25 épocas con un tamaño de lote de 
 32 muestras. Se implementó un programador de tasa de aprendizaje 
 que redujo la tasa a la mitad cada 10 épocas para optimizar la 
-convergencia. La Figura~\ref{fig:loss} muestra cómo el 
+convergencia. La figura~\ref{fig:loss} muestra cómo el 
 error de entrenamiento y validación disminuyó durante el proceso.
 
 \begin{figure}[!h]
@@ -182,7 +181,7 @@ de los atributos.
 
 Usando el modelo propuesto, se hicieron las predicciones
 del apartado de prueba. El resultado, como se puede observar en
-la figura~\ref{fig:Entrenamiento} es fácil apreciar que en su mayoría,
+la figura~\ref{fig:Entrenamiento}, es fácil de apreciar que en su mayoría,
 las predicciones de temperatura crítica fueron acertadas.
 
 \begin{figure}[!h]
@@ -209,9 +208,9 @@ $$R^2 Test: 0.9592$$
     \end{tabular}
     \label{tab:comp}
 \end{table}
-Comparación de desempeño entre diferentes modelos predictivos en el conjunto de datos evaluado. El modelo DNN (propuesto) mostró un desempeño superior en términos de $R^2$ y RMSE.
+Para la comparación de desempeño entre diferentes modelos predictivos en el conjunto de datos evaluado, el modelo DNN (propuesto) mostró un desempeño superior en términos de $R^2$ y RMSE.
 
-Como se muestra en la Tabla~\ref{tab:comp}, el modelo propuesto basado en 
+Como se muestra en la tabla~\ref{tab:comp}, el modelo propuesto basado en 
 redes neuronales densas (DNN) superó a los modelos SVD y Bagged Tree, 
 logrando un $R^2$ de 0.96 y un RMSE de 6.49~\cite{roter2020predicting}.
 
@@ -225,14 +224,13 @@ podría beneficiarse de más datos en ese rango.
 \begin{itemize}
     \item Se obtuvo un modelo de Redes Neuronales Densas capaz de 
     predecir con una $R^2$ de 95\%, el cual, podría ayudar a validar
-    aquellos superconductores teóricos a ser validados sin necesidad
-    crearlos físicamente.
-    \item Los modelos de recurrentes entrenados en otros trabajos 
+    aquellos superconductores teóricos sin necesidad de crearlos físicamente.
+    \item Los modelos recurrentes entrenados en otros trabajos 
     habían usado solo una tabla de composición del material, es 
-    decir, se usaba una tabla que indicaba el porcentaje del 
+    decir, una tabla que indicaba el porcentaje del 
     elemento usado para crear el material. Las conclusiones de este proyecto
     nos sugieren que para una mayor exactitud al predecir 
-    críticas es necesario combinar la tabla de composición con 
+    críticas, es necesario combinar la tabla de composición con 
     la extension de características del material y no solo entrenar a partir
     de la tabla del material.
     \item Este estudio demuestra la eficacia de las redes neuronales 
@@ -247,7 +245,7 @@ podría beneficiarse de más datos en ese rango.
 \end{itemize}
 
 Como trabajo a futuro se propone automatizar el proceso de la
-generación del dataset extendido de tal manera que baste con ingresar la formula
+generación del dataset extendido de tal manera que baste con ingresar la f\'ormula
 química para obtener la mayor cantidad de datos útiles.
 
 Comparado con trabajos previos que emplearon Random Forests y regresiones 

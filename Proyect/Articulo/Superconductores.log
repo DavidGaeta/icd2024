@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.13)  20 NOV 2024 04:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.13)  20 NOV 2024 09:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -324,7 +324,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 ]
-<Desvalance.png, id=91, 620.7993pt x 395.3169pt>
+<Desvalance.png, id=87, 620.7993pt x 395.3169pt>
 File: Desvalance.png Graphic file (type png)
 <use Desvalance.png>
 Package pdftex.def Info: Desvalance.png  used on input line 114.
@@ -336,26 +336,26 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 114--115
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 121.
-<Loss.png, id=94, 416.9979pt x 327.3831pt>
+<Loss.png, id=90, 416.9979pt x 327.3831pt>
 File: Loss.png Graphic file (type png)
 <use Loss.png>
-Package pdftex.def Info: Loss.png  used on input line 157.
+Package pdftex.def Info: Loss.png  used on input line 156.
 (pdftex.def)             Requested size: 258.0pt x 202.5658pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 157--158
+Overfull \hbox (6.0pt too wide) in paragraph at lines 156--157
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Entrenamiento.png, id=96, 615.7404pt x 338.9463pt>
+<Entrenamiento.png, id=92, 615.7404pt x 338.9463pt>
 File: Entrenamiento.png Graphic file (type png)
 <use Entrenamiento.png>
-Package pdftex.def Info: Entrenamiento.png  used on input line 190.
+Package pdftex.def Info: Entrenamiento.png  used on input line 189.
 (pdftex.def)             Requested size: 258.0pt x 142.02547pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 190--191
+Overfull \hbox (6.0pt too wide) in paragraph at lines 189--190
  [][] 
  []
 
@@ -363,7 +363,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 190--191
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 203.
+(Font)              <8> on input line 202.
 [2 <./Desvalance.png> <./Loss.png>] (./Superconductores.bbl
 Underfull \hbox (badness 4819) in paragraph at lines 16--18
 []\OT1/ptm/m/n/8 Tunguz, ``Su-per-con-duc-ti-vity da-ta da-ta-set.'' []$https : / / www . kaggle . com /
@@ -390,21 +390,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `Superconductores.out' has not changed.
-(rerunfilecheck)             Checksum: 51F28182E312EA0FC22C007791B10254;2295.
+(rerunfilecheck)             Checksum: 8FA87E6E270FE7FF965211333FDF4DC2;2210.
  ) 
 Here is how much of TeX's memory you used:
- 10817 strings out of 474789
- 174036 string characters out of 5764584
+ 10815 strings out of 474789
+ 174016 string characters out of 5764584
  1956187 words of memory out of 5000000
- 32869 multiletter control sequences out of 15000+600000
+ 32868 multiletter control sequences out of 15000+600000
  592414 words of font info for 95 fonts, out of 8000000 for 9000
  814 hyphenation exceptions out of 8191
  75i,9n,79p,436b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Superconductores.pdf (3 pages, 265692 bytes).
+Output written on Superconductores.pdf (3 pages, 265372 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
- 144 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 168 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
