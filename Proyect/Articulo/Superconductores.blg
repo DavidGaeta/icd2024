@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2024/Arch Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Superconductores.aux
+The style file: ieeetr.bst
+Database file #1: bibliografia.bib
+Warning--empty journal in gonzalez2013almacenamiento
+Warning--empty journal in coll2017superconductividad
+You've used 4 entries,
+            1876 wiz_defined-function locations,
+            500 strings with 4156 characters,
+and the built_in function-call counts, 631 in all, are:
+= -- 47
+> -- 34
+< -- 0
++ -- 13
+- -- 9
+* -- 48
+:= -- 114
+add.period$ -- 4
+call.type$ -- 4
+change.case$ -- 4
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 35
+empty$ -- 67
+format.name$ -- 9
+if$ -- 139
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 4
+newline$ -- 15
+num.names$ -- 4
+pop$ -- 17
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 6
+stack$ -- 0
+substring$ -- 0
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 4
+width$ -- 5
+write$ -- 34
+(There were 2 warnings)
