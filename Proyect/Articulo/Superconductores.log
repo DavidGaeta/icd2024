@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.13)  19 NOV 2024 22:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.13)  20 NOV 2024 04:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -256,39 +256,41 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen169
 \Gin@req@width=\dimen170
+) (/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count284
 \l__pdf_internal_box=\box53
 ) (./Superconductores.aux
-LaTeX Info: Redefining \. on input line 15.
-LaTeX Info: Redefining \% on input line 15.
+LaTeX Info: Redefining \. on input line 16.
+LaTeX Info: Redefining \% on input line 16.
 )
 \openout1 = `Superconductores.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 
 -- Lines per column: 56 (exact).
-LaTeX Info: Redefining \. on input line 15.
-LaTeX Info: Redefining \% on input line 15.
-Package hyperref Info: Link coloring OFF on input line 15.
+LaTeX Info: Redefining \. on input line 16.
+LaTeX Info: Redefining \% on input line 16.
+Package hyperref Info: Link coloring OFF on input line 16.
 (./Superconductores.out) (./Superconductores.out)
 \@outlinefile=\write3
 \openout3 = `Superconductores.out'.
@@ -313,27 +315,61 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 99.
+(Font)              <9> on input line 24.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 99.
+(Font)              <6> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 24.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-<Entrenamiento.png, id=83, 615.7404pt x 338.9463pt>
-File: Entrenamiento.png Graphic file (type png)
-<use Entrenamiento.png>
-Package pdftex.def Info: Entrenamiento.png  used on input line 160.
-(pdftex.def)             Requested size: 258.0pt x 142.02547pt.
+<Desvalance.png, id=91, 620.7993pt x 395.3169pt>
+File: Desvalance.png Graphic file (type png)
+<use Desvalance.png>
+Package pdftex.def Info: Desvalance.png  used on input line 114.
+(pdftex.def)             Requested size: 258.0pt x 164.29472pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 160--161
+Overfull \hbox (6.0pt too wide) in paragraph at lines 114--115
+ [][] 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 121.
+<Loss.png, id=94, 416.9979pt x 327.3831pt>
+File: Loss.png Graphic file (type png)
+<use Loss.png>
+Package pdftex.def Info: Loss.png  used on input line 157.
+(pdftex.def)             Requested size: 258.0pt x 202.5658pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 157--158
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./Superconductores.bbl)
+<Entrenamiento.png, id=96, 615.7404pt x 338.9463pt>
+File: Entrenamiento.png Graphic file (type png)
+<use Entrenamiento.png>
+Package pdftex.def Info: Entrenamiento.png  used on input line 190.
+(pdftex.def)             Requested size: 258.0pt x 142.02547pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 190--191
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 203.
+[2 <./Desvalance.png> <./Loss.png>] (./Superconductores.bbl
+Underfull \hbox (badness 4819) in paragraph at lines 16--18
+[]\OT1/ptm/m/n/8 Tunguz, ``Su-per-con-duc-ti-vity da-ta da-ta-set.'' []$https : / / www . kaggle . com /
+ []
+
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -345,30 +381,30 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[2 <./Entrenamiento.png>] (./Superconductores.aux
-LaTeX Info: Redefining \. on input line 15.
-LaTeX Info: Redefining \% on input line 15.
+[3 <./Entrenamiento.png>] (./Superconductores.aux
+LaTeX Info: Redefining \. on input line 16.
+LaTeX Info: Redefining \% on input line 16.
 )
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `Superconductores.out' has not changed.
-(rerunfilecheck)             Checksum: 2F7394D13C2D80AAC442A8B1376A1CFC;2133.
+(rerunfilecheck)             Checksum: 51F28182E312EA0FC22C007791B10254;2295.
  ) 
 Here is how much of TeX's memory you used:
- 10732 strings out of 474789
- 172568 string characters out of 5764584
- 1954187 words of memory out of 5000000
- 32803 multiletter control sequences out of 15000+600000
- 588572 words of font info for 85 fonts, out of 8000000 for 9000
+ 10817 strings out of 474789
+ 174036 string characters out of 5764584
+ 1956187 words of memory out of 5000000
+ 32869 multiletter control sequences out of 15000+600000
+ 592414 words of font info for 95 fonts, out of 8000000 for 9000
  814 hyphenation exceptions out of 8191
- 75i,8n,79p,415b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Superconductores.pdf (2 pages, 180668 bytes).
+ 75i,9n,79p,436b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Superconductores.pdf (3 pages, 265692 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 172 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 144 words of extra memory for PDF output out of 10000 (max. 10000000)
 

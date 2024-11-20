@@ -12,4 +12,11 @@ G.~Gonz{\'a}lez, ``Almacenamiento de energ{\'\i}a magn{\'e}tica por superconducc
 \bibitem{coll2017superconductividad}
 M.~Coll and A.~Palau, ``Superconductividad,'' 2017.
 
+\bibitem{tunguz_superconductivity_dataset}
+Tunguz, ``Superconductivity data dataset.'' \url{https://www.kaggle.com/datasets/tunguz/superconductivty-data-data-set/code}, 2020.
+\newblock Último acceso: 19 de noviembre de 2024.
+
+\bibitem{roter2020predicting}
+B.~Roter and S.~V. Dordevic, ``Predicting new superconductors and their critical temperatures using machine learning,'' {\em Physica C: Superconductivity and its applications}, vol.~575, p.~1353689, 2020.
+
 \end{thebibliography}

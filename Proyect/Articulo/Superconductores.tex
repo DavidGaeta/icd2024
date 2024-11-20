@@ -4,6 +4,7 @@
 \usepackage{cite} % For citations
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{lscape}
 
 \title{Explorando la Relación entre la Composición de los Elementos y la Superconductividad a Altas Temperaturas mediante Redes Neuronales Densas}
 \author{\IEEEauthorblockN{Eber David Gayt\'an Medina}
@@ -17,8 +18,22 @@ eber@cicese.edu.mx}
 \maketitle
 
 \begin{abstract}
-Your abstract here.
+    Este artículo explora la relación entre la composición de elementos y 
+    la superconductividad a altas temperaturas mediante redes neuronales 
+    densas. A partir de un dataset extendido con 167 atributos, se entrenó
+    un modelo que logró un $R^2$ de 0.96 y un RMSE de 6.49 en el conjunto 
+    de prueba, superando métodos previos. Los resultados destacan el 
+    potencial del aprendizaje automático para identificar materiales 
+    superconductores de manera eficiente, ahorrando tiempo y costos en 
+    experimentos físicos.
 \end{abstract}
+
+\begin{IEEEkeywords}
+    superconductividad, redes neuronales, predicción, 
+    temperatura crítica, aprendizaje automático
+\end{IEEEkeywords}
+    
+    
 
 \section{Introducción}
 
@@ -68,7 +83,7 @@ Se utilizaron dos~\href{https://www.kaggle.com/datasets/tunguz/superconductivty-
 el primero se hizo a partir un conjunto de datos con descriptores químicos y 
 físicos de materiales, con el objetivo de establecer una relación entre la 
 composición de los elementos y la superconductividad a altas 
-temperaturas. El segundo es la base y tiene el formato de material y temperatura critica.
+temperaturas~\cite{tunguz_superconductivity_dataset}. El segundo es la base y tiene el formato de material y temperatura critica.
 Para asegurarse de condensar la mayor cantidad de información en un solo data set ase hizo 
 un ``merge'' a partir de la temperatura critica, uniendo 82 columnas
 del primer dataset y 87 del segundo.
@@ -88,11 +103,18 @@ Se emplearon histogramas y gráficos de densidad para visualizar
 la distribución.
 
 \subsubsection{Estandarizacion}
-Se obtuvo que los datos estaban desvalanceados hacia temperaturas 
-cercanas al 0 absoluto, por lo tanto se hizo una transformación 
+Se obtuvo que los datos se desvalanceaban hacia temperaturas 
+cercanas al 0 absoluto como se puede observar en la fugura~\ref{fig:desvalance}, por lo tanto se hizo una transformación 
 z-score para de modo que todos los atributos contribuyan de manera 
 equitativa al entrenamiento del modelo, evitando que los atributos 
 con mayores magnitudes dominen el proceso.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Desvalance.png}
+    \caption{Distribución de temperaturas críticas en el dataset.}
+    \label{fig:desvalance}
+\end{figure}
 
 \subsubsection{División del Conjunto de Datos}
 El conjunto de datos fue dividido 
@@ -124,11 +146,19 @@ métrica de evaluación.
 
 \subsection{Entrenamiento}
 
-Se entrenó el modelo durante 25 épocas con un tamaño de lote de 32 
-muestras. Se implementó un programador de tasa de aprendizaje que 
-redujo la tasa a la mitad cada 10 épocas para optimizar la 
-convergencia. Además, se usaron conjuntos de datos de validación 
-para monitorear el rendimiento y ajustar los hiperparámetros.
+Se entrenó el modelo durante 25 épocas con un tamaño de lote de 
+32 muestras. Se implementó un programador de tasa de aprendizaje 
+que redujo la tasa a la mitad cada 10 épocas para optimizar la 
+convergencia. La Figura~\ref{fig:loss} muestra cómo el 
+error de entrenamiento y validación disminuyó durante el proceso.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Loss.png} % Cambia el nombre por el archivo correspondiente
+    \caption{Evolución de la función de pérdida {\bf Loss} durante el entrenamiento. La curva azul representa el conjunto de entrenamiento y la curva naranja el conjunto de validación.}
+    \label{fig:loss}
+\end{figure}
+
 
 \subsection{Evaluación}
 
@@ -162,19 +192,71 @@ las predicciones de temperatura crítica fueron acertadas.
     \label{fig:Entrenamiento}
 \end{figure}
 
-Se uso MSE, $R^2$, RMSE y MAE para hacer las validaciones, dando como resultado:
+Se uso $R^2$, RMSE y MAE para hacer las validaciones, dando como resultado:
+
 $$RMSE: 6.4965$$
 $$R^2 Train: 0.9621$$
 $$R^2 Test: 0.9592$$
 
+\begin{table}[!h]
+    \centering
+    \begin{tabular}{|l|c|c|c|}
+    \hline
+    \textbf{Métrica / Modelo} & \textbf{SVD} & \textbf{Bagged Tree} & \textbf{DNN (Propuesto)} \\ \hline
+    $R^2$                     & 0.90         & 0.93                 & 0.96                     \\ 
+    RMSE                      & 9.67         & 8.91                 & 6.49                     \\ 
+    \hline
+    \end{tabular}
+    \label{tab:comp}
+\end{table}
+Comparación de desempeño entre diferentes modelos predictivos en el conjunto de datos evaluado. El modelo DNN (propuesto) mostró un desempeño superior en términos de $R^2$ y RMSE.
 
+Como se muestra en la Tabla~\ref{tab:comp}, el modelo propuesto basado en 
+redes neuronales densas (DNN) superó a los modelos SVD y Bagged Tree, 
+logrando un $R^2$ de 0.96 y un RMSE de 6.49~\cite{roter2020predicting}.
 
-
+\subsection{Análisis de Errores}
+A pesar del alto $R^2$, los errores más altos se observaron en compuestos 
+con temperaturas críticas superiores a 100 K, indicando que el modelo 
+podría beneficiarse de más datos en ese rango.
 
 \section{Discusión y conclusiones}
 
-Falta un análisis de la composición de cada 
-Conclude your paper.
+\begin{itemize}
+    \item Se obtuvo un modelo de Redes Neuronales Densas capaz de 
+    predecir con una $R^2$ de 95\%, el cual, podría ayudar a validar
+    aquellos superconductores teóricos a ser validados sin necesidad
+    crearlos físicamente.
+    \item Los modelos de recurrentes entrenados en otros trabajos 
+    habían usado solo una tabla de composición del material, es 
+    decir, se usaba una tabla que indicaba el porcentaje del 
+    elemento usado para crear el material. Las conclusiones de este proyecto
+    nos sugieren que para una mayor exactitud al predecir 
+    críticas es necesario combinar la tabla de composición con 
+    la extension de características del material y no solo entrenar a partir
+    de la tabla del material.
+    \item Este estudio demuestra la eficacia de las redes neuronales 
+    densas para predecir temperaturas críticas en materiales 
+    superconductores. El modelo propuesto no solo superó los investigaciones 
+    anteriores, sino que también subraya la importancia de combinar 
+    descriptores químicos y físicos para mejorar las predicciones. Estos 
+    hallazgos representan un paso hacia el diseño computacional de 
+    materiales superconductores, optimizando recursos y tiempo en la 
+    investigación experimental.
+    
+\end{itemize}
+
+Como trabajo a futuro se propone automatizar el proceso de la
+generación del dataset extendido de tal manera que baste con ingresar la formula
+química para obtener la mayor cantidad de datos útiles.
+
+Comparado con trabajos previos que emplearon Random Forests y regresiones 
+lineales, el modelo propuesto logró un 3\% de mejora en el $R^2$. Sin 
+embargo, se identificaron limitaciones como la sensibilidad a atributos 
+específicos que requieren validación experimental. Además, se sugiere 
+explorar arquitecturas más avanzadas como Transformers para tareas 
+similares.
+
 
 \bibliographystyle{ieeetr} % Use the IEEEtran bibliography style
 \bibliography{bibliografia.bib} % Replace with your .bib file name
